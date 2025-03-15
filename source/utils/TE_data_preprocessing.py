@@ -133,10 +133,9 @@ def plot_data(data_dict, filename, variables=None, figsize=(12, 6)):
 if __name__ == "__main__":
     # 读取数据
     data = read_dat_files("D:\数据集文件初步\田纳西数据集\ieee\Tennessee\TE DATASETS\TE数据\训练集")
-    
-    # 获取第一个文件名
+
     print(data.keys())
-    first_file = next(iter(data.keys()))
+    first_file = next(iter(data.keys()))# 获取第一个文件名
     print(first_file)
     first_file = 'd11.dat'
     
